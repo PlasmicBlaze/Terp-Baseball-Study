@@ -1,0 +1,2682 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0511.1508                               -->
+<workbook original-version='18.1' source-build='2023.1.2 (20231.23.0511.1508)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Game.Play+ (BUDT703_Project_0506_03)' inline='true' name='federated.0i5zjmx0vttrvr1h6r4z11p5iv8w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='doitsqlx.rhsmith.umd.edu,9703' name='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh'>
+            <connection authentication='sspi' class='sqlserver' dbname='BUDT703_Project_0506_03' minimum-driver-version='SQL Server Native Client 10.0' odbc-native-protocol='yes' one-time-sql='' server='doitsqlx.rhsmith.umd.edu,9703' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Conference' table='[dbo].[Game.Conference]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Play' table='[dbo].[Game.Play]' type='table' />
+          <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Location' table='[dbo].[Game.Location]' type='table' />
+          <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Opponent' table='[dbo].[Game.Opponent]' type='table' />
+          <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Perform' table='[dbo].[Game.Perform]' type='table' />
+          <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Conference' table='[dbo].[Game.Conference]' type='table' />
+          <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Year' table='[dbo].[Game.Year]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[confId (Game.Conference)]' value='[Game.Conference].[confId]' />
+          <map key='[confId]' value='[Game.Perform].[confId]' />
+          <map key='[confName]' value='[Game.Conference].[confName]' />
+          <map key='[gameDate]' value='[Game.Play].[gameDate]' />
+          <map key='[gameOpponentScore]' value='[Game.Play].[gameOpponentScore]' />
+          <map key='[gameTeamScore]' value='[Game.Play].[gameTeamScore]' />
+          <map key='[gameTime]' value='[Game.Play].[gameTime]' />
+          <map key='[gameType]' value='[Game.Play].[gameType]' />
+          <map key='[locnId (Game.Location)]' value='[Game.Location].[locnId]' />
+          <map key='[locnId (Game.Perform)]' value='[Game.Perform].[locnId]' />
+          <map key='[locnId]' value='[Game.Play].[locnId]' />
+          <map key='[locnName]' value='[Game.Location].[locnName]' />
+          <map key='[opntId (Game.Opponent)]' value='[Game.Opponent].[opntId]' />
+          <map key='[opntId (Game.Perform)]' value='[Game.Perform].[opntId]' />
+          <map key='[opntId]' value='[Game.Play].[opntId]' />
+          <map key='[opntName]' value='[Game.Opponent].[opntName]' />
+          <map key='[year (Game.Year)]' value='[Game.Year].[year]' />
+          <map key='[year]' value='[Game.Play].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>opntId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[opntId]</local-name>
+            <parent-name>[Game.Play]</parent-name>
+            <remote-alias>opntId</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>locnId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[locnId]</local-name>
+            <parent-name>[Game.Play]</parent-name>
+            <remote-alias>locnId</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Game.Play]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gameDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[gameDate]</local-name>
+            <parent-name>[Game.Play]</parent-name>
+            <remote-alias>gameDate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gameTime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gameTime]</local-name>
+            <parent-name>[Game.Play]</parent-name>
+            <remote-alias>gameTime</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gameType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gameType]</local-name>
+            <parent-name>[Game.Play]</parent-name>
+            <remote-alias>gameType</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gameTeamScore</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[gameTeamScore]</local-name>
+            <parent-name>[Game.Play]</parent-name>
+            <remote-alias>gameTeamScore</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gameOpponentScore</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[gameOpponentScore]</local-name>
+            <parent-name>[Game.Play]</parent-name>
+            <remote-alias>gameOpponentScore</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>locnId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[locnId (Game.Location)]</local-name>
+            <parent-name>[Game.Location]</parent-name>
+            <remote-alias>locnId</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Location_236E718B8679497E8EEC63CED7350F91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>locnName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[locnName]</local-name>
+            <parent-name>[Game.Location]</parent-name>
+            <remote-alias>locnName</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Location_236E718B8679497E8EEC63CED7350F91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opntId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[opntId (Game.Opponent)]</local-name>
+            <parent-name>[Game.Opponent]</parent-name>
+            <remote-alias>opntId</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Opponent_EE8E8513CC824F528F5531B01369313E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opntName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[opntName]</local-name>
+            <parent-name>[Game.Opponent]</parent-name>
+            <remote-alias>opntName</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Opponent_EE8E8513CC824F528F5531B01369313E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opntId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[opntId (Game.Perform)]</local-name>
+            <parent-name>[Game.Perform]</parent-name>
+            <remote-alias>opntId</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Perform_27B47AC25C6E4E2DB4C5AD0782833D60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>locnId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[locnId (Game.Perform)]</local-name>
+            <parent-name>[Game.Perform]</parent-name>
+            <remote-alias>locnId</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Perform_27B47AC25C6E4E2DB4C5AD0782833D60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>confId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[confId]</local-name>
+            <parent-name>[Game.Perform]</parent-name>
+            <remote-alias>confId</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Perform_27B47AC25C6E4E2DB4C5AD0782833D60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>confId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[confId (Game.Conference)]</local-name>
+            <parent-name>[Game.Conference]</parent-name>
+            <remote-alias>confId</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Conference_E4C109D07C194A96A08DB8491E8FD866]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>confName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[confName]</local-name>
+            <parent-name>[Game.Conference]</parent-name>
+            <remote-alias>confName</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Conference_E4C109D07C194A96A08DB8491E8FD866]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year (Game.Year)]</local-name>
+            <parent-name>[Game.Year]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Game.Year_4F488618AFDA41B08299E73A9B1DCF66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Wins' datatype='integer' name='[Calculation_61080098099253248]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [gameTeamScore] &gt; [gameOpponentScore] THEN 1 ELSE 0 END)' />
+      </column>
+      <column caption='Total Losses' datatype='integer' name='[Calculation_61080098099363841]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [gameTeamScore] &lt;= [gameOpponentScore] THEN 1 ELSE 0 END)' />
+      </column>
+      <column caption='Total win rate' datatype='real' name='[Calculation_61080098099519490]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [gameTeamScore] &gt; [gameOpponentScore] THEN 1 ELSE 0 END) / COUNT([__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Game.Conference' datatype='table' name='[__tableau_internal_object_id__].[Game.Conference_E4C109D07C194A96A08DB8491E8FD866]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Game.Location' datatype='table' name='[__tableau_internal_object_id__].[Game.Location_236E718B8679497E8EEC63CED7350F91]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Game.Opponent' datatype='table' name='[__tableau_internal_object_id__].[Game.Opponent_EE8E8513CC824F528F5531B01369313E]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Game.Perform' datatype='table' name='[__tableau_internal_object_id__].[Game.Perform_27B47AC25C6E4E2DB4C5AD0782833D60]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Game.Play' datatype='table' name='[__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Game.Year' datatype='table' name='[__tableau_internal_object_id__].[Game.Year_4F488618AFDA41B08299E73A9B1DCF66]' role='measure' type='quantitative' />
+      <column caption='Conf Id' datatype='string' name='[confId]' role='dimension' type='nominal' />
+      <column caption='Conf Name' datatype='string' name='[confName]' role='dimension' type='nominal' />
+      <column caption='Game Date' datatype='date' name='[gameDate]' role='dimension' type='ordinal' />
+      <column caption='Game Opponent Score' datatype='integer' name='[gameOpponentScore]' role='measure' type='quantitative' />
+      <column caption='Game Team Score' datatype='integer' name='[gameTeamScore]' role='measure' type='quantitative' />
+      <column caption='Game Time' datatype='string' name='[gameTime]' role='dimension' type='nominal' />
+      <column caption='Game Type' datatype='string' name='[gameType]' role='dimension' type='nominal' />
+      <column caption='Locn Id' datatype='string' name='[locnId]' role='dimension' type='nominal' />
+      <column caption='Locn Name' datatype='string' name='[locnName]' role='dimension' type='nominal' />
+      <column caption='Opnt Id' datatype='string' name='[opntId]' role='dimension' type='nominal' />
+      <column caption='Opnt Name' datatype='string' name='[opntName]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[year (Game.Year)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+      <column-instance column='[gameType]' derivation='Attribute' name='[attr:gameType:nk]' pivot='key' type='nominal' />
+      <column-instance column='[gameDate]' derivation='Count' name='[cnt:gameDate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[gameType]' derivation='Count' name='[cnt:gameType:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[confName]' derivation='None' name='[none:confName:nk]' pivot='key' type='nominal' />
+      <column-instance column='[locnName]' derivation='None' name='[none:locnName:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_61080098099519490]' derivation='User' name='[usr:Calculation_61080098099519490:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:confName:nk]' palette='red_gold_10_0' type='palette'>
+            <map to='#b71d3e'>
+              <bucket>&quot;No Conference&quot;</bucket>
+            </map>
+            <map to='#cb3c43'>
+              <bucket>&quot;NCAA Winston-Salem Regional&quot;</bucket>
+            </map>
+            <map to='#de5747'>
+              <bucket>&quot;NCAA Greenville Regional&quot;</bucket>
+            </map>
+            <map to='#ee734a'>
+              <bucket>&quot;NCAA College Park Regional&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Big Ten&quot;</bucket>
+            </map>
+            <map to='#f8b053'>
+              <bucket>&quot;Cambria College Classic&quot;</bucket>
+            </map>
+            <map to='#fa8f4d'>
+              <bucket>&quot;Coastal Caroline Tournament&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:locnName:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aberdeen, Md. (Leidos Field at Ironbirds Stadium)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Buies Creek, NC&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Bel Air, Md. (Harford CC)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Myrtle Beach, S.C.&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Piscataway, NJ&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Harmans, Md. (Joe Cannon Stadium)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Villanova, PA&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;West Lafayette, IN&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Columbia, S.C.&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Howard&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pittsburgh, Pa.&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Richmond&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Waco, TX&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Annapolis, Md.&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Cary, N.C.&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Aberdeen, Md. (Ripken Stadium)&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Queens, N.Y.&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mt. Pleasant, S.C.&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Duke&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Baltimore, Md.&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[attr:gameType:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameType:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameDate:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:confName:nk]' palette='red_gold_10_0' type='palette'>
+            <map to='#b71d3e'>
+              <bucket>&quot;No Conference&quot;</bucket>
+            </map>
+            <map to='#cb3c43'>
+              <bucket>&quot;NCAA Winston-Salem Regional&quot;</bucket>
+            </map>
+            <map to='#de5747'>
+              <bucket>&quot;NCAA Greenville Regional&quot;</bucket>
+            </map>
+            <map to='#ee734a'>
+              <bucket>&quot;NCAA College Park Regional&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Big Ten&quot;</bucket>
+            </map>
+            <map to='#f8b053'>
+              <bucket>&quot;Cambria College Classic&quot;</bucket>
+            </map>
+            <map to='#fa8f4d'>
+              <bucket>&quot;Coastal Caroline Tournament&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:locnName:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aberdeen, Md. (Leidos Field at Ironbirds Stadium)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Buies Creek, NC&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Bel Air, Md. (Harford CC)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Myrtle Beach, S.C.&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Piscataway, NJ&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Harmans, Md. (Joe Cannon Stadium)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Villanova, PA&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;West Lafayette, IN&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Columbia, S.C.&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Howard&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pittsburgh, Pa.&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Richmond&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Waco, TX&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Annapolis, Md.&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Cary, N.C.&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Aberdeen, Md. (Ripken Stadium)&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Queens, N.Y.&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mt. Pleasant, S.C.&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Duke&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Baltimore, Md.&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[attr:gameType:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameType:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameDate:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Game.Conference' id='Game.Conference_E4C109D07C194A96A08DB8491E8FD866'>
+            <properties context=''>
+              <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Conference' table='[dbo].[Game.Conference]' type='table' />
+            </properties>
+          </object>
+          <object caption='Game.Location' id='Game.Location_236E718B8679497E8EEC63CED7350F91'>
+            <properties context=''>
+              <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Location' table='[dbo].[Game.Location]' type='table' />
+            </properties>
+          </object>
+          <object caption='Game.Opponent' id='Game.Opponent_EE8E8513CC824F528F5531B01369313E'>
+            <properties context=''>
+              <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Opponent' table='[dbo].[Game.Opponent]' type='table' />
+            </properties>
+          </object>
+          <object caption='Game.Perform' id='Game.Perform_27B47AC25C6E4E2DB4C5AD0782833D60'>
+            <properties context=''>
+              <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Perform' table='[dbo].[Game.Perform]' type='table' />
+            </properties>
+          </object>
+          <object caption='Game.Play' id='Game.Play_ECA0D5A2AC4A4274A16BDB586507372E'>
+            <properties context=''>
+              <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Play' table='[dbo].[Game.Play]' type='table' />
+            </properties>
+          </object>
+          <object caption='Game.Year' id='Game.Year_4F488618AFDA41B08299E73A9B1DCF66'>
+            <properties context=''>
+              <relation connection='sqlserver.0nllypz1f1wbbn1dmq58c0hnj9qh' name='Game.Year' table='[dbo].[Game.Year]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[confId]' />
+              <expression op='[confId (Game.Conference)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='Game.Perform_27B47AC25C6E4E2DB4C5AD0782833D60' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='Game.Conference_E4C109D07C194A96A08DB8491E8FD866' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[locnId]' />
+              <expression op='[locnId (Game.Location)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='Game.Play_ECA0D5A2AC4A4274A16BDB586507372E' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='Game.Location_236E718B8679497E8EEC63CED7350F91' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[opntId]' />
+              <expression op='[opntId (Game.Opponent)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='Game.Play_ECA0D5A2AC4A4274A16BDB586507372E' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='Game.Opponent_EE8E8513CC824F528F5531B01369313E' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[opntId]' />
+              <expression op='[opntId (Game.Perform)]' />
+            </expression>
+            <first-end-point object-id='Game.Play_ECA0D5A2AC4A4274A16BDB586507372E' />
+            <second-end-point object-id='Game.Perform_27B47AC25C6E4E2DB4C5AD0782833D60' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[year]' />
+              <expression op='[year (Game.Year)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='Game.Play_ECA0D5A2AC4A4274A16BDB586507372E' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='Game.Year_4F488618AFDA41B08299E73A9B1DCF66' unique-key='true' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Top 10 Opponents'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Among the opponent teams which the Terps have played at least 10 times. who has UMD faced the most? </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Game.Play+ (BUDT703_Project_0506_03)' name='federated.0i5zjmx0vttrvr1h6r4z11p5iv8w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i5zjmx0vttrvr1h6r4z11p5iv8w'>
+            <_.fcp.ObjectModelTableType.true...column caption='Game.Play' datatype='table' name='[__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[opntName]' derivation='None' name='[none:opntName:nk]' pivot='key' type='nominal' />
+            <column caption='Opnt Name' datatype='string' name='[opntName]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Game.Play' datatype='integer' name='[__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]' included-values='in-range'>
+            <min>10</min>
+            <max>53</max>
+          </filter>
+          <slices>
+            <column>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='1248' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]' value='Count of Games Played'>
+              <formatted-text>
+                <run>Count of Games Played</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]' />
+              <color column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]' />
+              <text column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>16</value>
+                <value>&quot;Michigan State&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>14</value>
+                <value>&quot;William &amp; Mary&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>22</value>
+                <value>&quot;West Virginia&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>50</value>
+                <value>&quot;Wake Forest&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>25</value>
+                <value>&quot;Virginia Tech&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>48</value>
+                <value>&quot;Virginia&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>15</value>
+                <value>&quot;VCU&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>11</value>
+                <value>&quot;Va Commonwealth&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='18' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>11</value>
+                <value>&quot;UNCW&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='20' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>24</value>
+                <value>&quot;UMBC&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='25' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>42</value>
+                <value>&quot;Towson&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='39' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>19</value>
+                <value>&quot;Rutgers&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='41' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>12</value>
+                <value>&quot;Richmond&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='45' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>19</value>
+                <value>&quot;Purdue&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='46' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>10</value>
+                <value>&quot;Princeton&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='48' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>22</value>
+                <value>&quot;Penn State&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='51' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>12</value>
+                <value>&quot;Old Dominion&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='53' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>21</value>
+                <value>&quot;Ohio State&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='56' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>21</value>
+                <value>&quot;Northwestern&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='58' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>28</value>
+                <value>&quot;North Carolina State&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='59' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>53</value>
+                <value>&quot;North Carolina&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='61' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>10</value>
+                <value>&quot;No Carolina St&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='64' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>18</value>
+                <value>&quot;Nebraska&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='65' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>10</value>
+                <value>&quot;NC State&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='68' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>11</value>
+                <value>&quot;Navy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='70' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>18</value>
+                <value>&quot;Minnesota&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='71' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>23</value>
+                <value>&quot;Michigan&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='72' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>21</value>
+                <value>&quot;Miami&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='74' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>14</value>
+                <value>&quot;Maryland Eastern Shore&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='85' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>10</value>
+                <value>&quot;Liberty&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='91' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>40</value>
+                <value>&quot;James Madison&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='93' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>20</value>
+                <value>&quot;Iowa&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='96' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>22</value>
+                <value>&quot;Indiana&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='97' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>20</value>
+                <value>&quot;Illinois&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='103' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>42</value>
+                <value>&quot;Georgia Tech&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='104' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>11</value>
+                <value>&quot;Georgetown&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='105' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>17</value>
+                <value>&quot;George Washington&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='106' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>25</value>
+                <value>&quot;George Mason&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='108' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>47</value>
+                <value>&quot;Florida State&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='113' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>13</value>
+                <value>&quot;Elon&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='114' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>13</value>
+                <value>&quot;East Carolina&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='116' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>41</value>
+                <value>&quot;Duke&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='117' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>33</value>
+                <value>&quot;Delaware&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='122' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>14</value>
+                <value>&quot;Coppin State&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='125' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>45</value>
+                <value>&quot;Clemson&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='133' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>15</value>
+                <value>&quot;Bryant&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='136' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]</field>
+                  <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>26</value>
+                <value>&quot;Boston College&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{42867818-AA2F-4A51-8688-7B5F611A5C23}' />
+    </worksheet>
+    <worksheet name='Top 20 Non-Home Win Rates'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>At which non-home stadium do we have the top 20 win rates? How many games have been played at the respective stadiums?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Game.Play+ (BUDT703_Project_0506_03)' name='federated.0i5zjmx0vttrvr1h6r4z11p5iv8w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i5zjmx0vttrvr1h6r4z11p5iv8w'>
+            <_.fcp.ObjectModelTableType.false...column caption='Game.Play' datatype='integer' name='[__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]' role='measure' type='quantitative' />
+            <column caption='Total win rate' datatype='real' name='[Calculation_61080098099519490]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [gameTeamScore] &gt; [gameOpponentScore] THEN 1 ELSE 0 END) / COUNT([__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E])' />
+            </column>
+            <_.fcp.ObjectModelTableType.true...column caption='Game.Play' datatype='table' name='[__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]' role='measure' type='quantitative' />
+            <column-instance column='[gameDate]' derivation='Count' name='[cnt:gameDate:qk]' pivot='key' type='quantitative' />
+            <column caption='Game Date' datatype='date' name='[gameDate]' role='dimension' type='ordinal' />
+            <column caption='Game Opponent Score' datatype='integer' name='[gameOpponentScore]' role='measure' type='quantitative' />
+            <column caption='Game Team Score' datatype='integer' name='[gameTeamScore]' role='measure' type='quantitative' />
+            <column caption='Locn Name' datatype='string' name='[locnName]' role='dimension' type='nominal' />
+            <column-instance column='[locnName]' derivation='None' name='[none:locnName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_61080098099519490]' derivation='User' name='[usr:Calculation_61080098099519490:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:locnName:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_61080098099519490]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:locnName:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:locnName:nk]' direction='DESC' using='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' />
+          <slices>
+            <column>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:locnName:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameDate:qk]' scope='cols' value='Total Games Played' />
+            <format attr='title' class='0' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' scope='cols' value='Win Rate' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' num-steps='5' palette='red_gold_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameDate:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameDate:qk]' value='Count of Games Played'>
+              <formatted-text>
+                <run>Count of Games Played</run>
+              </formatted-text>
+            </format>
+            <format attr='color' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' value='Total Win Rate'>
+              <formatted-text>
+                <run>Total Win Rate</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameDate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameDate:qk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:locnName:nk]</rows>
+        <cols>([federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameDate:qk] + [federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk])</cols>
+      </table>
+      <simple-id uuid='{1BA77B02-4586-4645-8F1A-F823DBDD6367}' />
+    </worksheet>
+    <worksheet name='Win Rate per Game Type, Conference (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>How does the win rate differ for away, home, and neutral matches in each conference?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Game.Play+ (BUDT703_Project_0506_03)' name='federated.0i5zjmx0vttrvr1h6r4z11p5iv8w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i5zjmx0vttrvr1h6r4z11p5iv8w'>
+            <_.fcp.ObjectModelTableType.false...column caption='Game.Play' datatype='integer' name='[__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]' role='measure' type='quantitative' />
+            <column caption='Total win rate' datatype='real' name='[Calculation_61080098099519490]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [gameTeamScore] &gt; [gameOpponentScore] THEN 1 ELSE 0 END) / COUNT([__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E])' />
+            </column>
+            <_.fcp.ObjectModelTableType.true...column caption='Game.Play' datatype='table' name='[__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]' role='measure' type='quantitative' />
+            <column-instance column='[gameType]' derivation='Count' name='[cnt:gameType:qk]' pivot='key' type='quantitative' />
+            <column caption='Conf Name' datatype='string' name='[confName]' role='dimension' type='nominal' />
+            <column caption='Game Opponent Score' datatype='integer' name='[gameOpponentScore]' role='measure' type='quantitative' />
+            <column caption='Game Team Score' datatype='integer' name='[gameTeamScore]' role='measure' type='quantitative' />
+            <column caption='Game Type' datatype='string' name='[gameType]' role='dimension' type='nominal' />
+            <column-instance column='[confName]' derivation='None' name='[none:confName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gameType]' derivation='None' name='[none:gameType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_61080098099519490]' derivation='User' name='[usr:Calculation_61080098099519490:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:confName:nk]' value='false' />
+            <format attr='text-format' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameType:qk]' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameType:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameType:qk]' value='Count of Game Type'>
+              <formatted-text>
+                <run>Count of Game Type</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameType:qk]' />
+              <text column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:confName:nk]' />
+              <size column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:gameType:nk]</cols>
+      </table>
+      <simple-id uuid='{5B81E649-E38B-4B67-AC8D-6608A2045053}' />
+    </worksheet>
+    <worksheet name='Win Rates per year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>What are the win rates for each year?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Game.Play+ (BUDT703_Project_0506_03)' name='federated.0i5zjmx0vttrvr1h6r4z11p5iv8w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i5zjmx0vttrvr1h6r4z11p5iv8w'>
+            <_.fcp.ObjectModelTableType.false...column caption='Game.Play' datatype='integer' name='[__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]' role='measure' type='quantitative' />
+            <column caption='Total win rate' datatype='real' name='[Calculation_61080098099519490]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [gameTeamScore] &gt; [gameOpponentScore] THEN 1 ELSE 0 END) / COUNT([__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E])' />
+            </column>
+            <_.fcp.ObjectModelTableType.true...column caption='Game.Play' datatype='table' name='[__tableau_internal_object_id__].[Game.Play_ECA0D5A2AC4A4274A16BDB586507372E]' role='measure' type='quantitative' />
+            <column caption='Game Opponent Score' datatype='integer' name='[gameOpponentScore]' role='measure' type='quantitative' />
+            <column caption='Game Team Score' datatype='integer' name='[gameTeamScore]' role='measure' type='quantitative' />
+            <column-instance column='[year (Game.Year)]' derivation='None' name='[none:year (Game.Year):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_61080098099519490]' derivation='User' name='[usr:Calculation_61080098099519490:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[year (Game.Year)]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:year (Game.Year):ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' scope='cols' value='Total Win Rate' />
+            <encoding attr='space' class='0' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.10000000000000001' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' value='Total Win Rate'>
+              <formatted-text>
+                <run>Total Win Rate</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:year (Game.Year):ok]</rows>
+        <cols>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[usr:Calculation_61080098099519490:qk]</cols>
+      </table>
+      <simple-id uuid='{16B5904C-65B9-445D-93AD-89A1342F750F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Win Rates per year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:year (Game.Year):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4974F953-E92C-40BC-9F9F-C3F219638F3F}' />
+    </window>
+    <window class='worksheet' name='Top 10 Opponents'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[__tableau_internal_object_id__].[cnt:Game.Play_ECA0D5A2AC4A4274A16BDB586507372E:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:opntName:nk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{CBFC6D79-7F78-4A0D-AB78-E24DD3EFB9BF}' />
+    </window>
+    <window class='worksheet' name='Top 20 Non-Home Win Rates'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameDate:qk]</field>
+            <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:gameType:nk]</field>
+            <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[yr:gameDate:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{501DE1C5-65C4-4750-8668-1659A4EE4365}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Win Rate per Game Type, Conference (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameType:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[cnt:gameType:qk]</field>
+            <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:confName:nk]</field>
+            <field>[federated.0i5zjmx0vttrvr1h6r4z11p5iv8w].[none:gameType:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{85568821-03A4-4ACC-8C9D-F21F12EEBA61}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Top 10 Opponents' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Top 20 Non-Home Win Rates' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Win Rate per Game Type, Conference (2)' width='192'>
+      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
+      BeBS1Px/z3gE4WiUnMIAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Win Rates per year' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
